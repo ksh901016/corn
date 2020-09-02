@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class ServiceConfig {
 
-  @Value("${application.profile}")
-  private String exampleProperty;
+  @Value("${spring.datasource.username}")
+  private String decryptedUserName;
 
-  public String getExampleProperty(){
-    return exampleProperty;
+  public String getDecryptedUserName(){
+    return decryptedUserName;
   }
 }
