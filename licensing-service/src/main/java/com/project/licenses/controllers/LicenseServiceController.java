@@ -1,8 +1,8 @@
-package com.project.cornservice.licenses.controllers;
+package com.project.licenses.controllers;
 
-import com.project.cornservice.licenses.config.ServiceConfig;
-import com.project.cornservice.licenses.model.License;
-import com.project.cornservice.licenses.services.LicenseService;
+import com.project.licenses.model.License;
+import com.project.licenses.services.LicenseService;
+import com.project.licenses.config.ServiceConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

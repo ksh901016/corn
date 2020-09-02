@@ -1,4 +1,4 @@
-package com.project.cornservice.licenses.model;
+package com.project.licenses.model;
 
 
 import javax.persistence.Column;

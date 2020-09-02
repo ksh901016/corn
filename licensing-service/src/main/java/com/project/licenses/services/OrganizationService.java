@@ -1,4 +1,4 @@
-package com.project.cornservice.licenses.services;
+package com.project.licenses.services;
 
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
-package com.project.cornservice.licenses.services;
+package com.project.licenses.services;
 
-import com.project.cornservice.licenses.config.ServiceConfig;
-import com.project.cornservice.licenses.model.License;
-import com.project.cornservice.licenses.repository.LicenseRepository;
+import com.project.licenses.config.ServiceConfig;
+import com.project.licenses.model.License;
+import com.project.licenses.repository.LicenseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +20,7 @@ public class LicenseService {
 
     public License getLicense(String organizationId, String licenseId) {
         License license = licenseRepository.findByOrganizationIdAndLicenseId(organizationId, licenseId);
-        return license.withComment(config.getDecryptedUserName());
+        return license.withComment(config.getExampleProperty());
     }
 
     public List<License> getLicensesByOrg(String organizationId){

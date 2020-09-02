@@ -1,6 +1,6 @@
-package com.project.cornservice;
+package com.project;
 
-import com.project.cornservice.common.config.ServiceConfig;
+import com.project.licenses.config.ServiceConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -10,17 +10,17 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 @SpringBootApplication
 @RefreshScope
-public class CornServiceApplication implements ApplicationRunner {
+public class Application implements ApplicationRunner {
 	@Autowired
 	ServiceConfig serviceConfig;
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("########################");
-		System.out.println(serviceConfig.getDecryptedUserName());
+		System.out.println(serviceConfig.getExampleProperty());
 		System.out.println("########################");
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(CornServiceApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }

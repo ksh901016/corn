@@ -1,4 +1,4 @@
-package com.project.cornservice.licenses.config;
+package com.project.cornservice.common.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

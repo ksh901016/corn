@@ -1,6 +1,6 @@
-package com.project.cornservice.licenses.repository;
+package com.project.licenses.repository;
 
-import com.project.cornservice.licenses.model.License;
+import com.project.licenses.model.License;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
